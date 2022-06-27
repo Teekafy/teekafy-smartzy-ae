@@ -1,0 +1,607 @@
+
+<!-- saved from url=(0102)https://labs.cognitiveclass.ai/tools/jupyterlab/lab/tree/labs/DS0105EN/Jupyter_Notebook.ipynb?lti=true -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="application/javascript" async="" defer="" src="./TEE_files/track.js.download"></script><script crossorigin="anonymous" integrity="sha256-u/+nXAt6RpN/+9eJP1WOheMn1uXftI9KGUFsrSS/2bU=" type="text/javascript" src="./TEE_files/appcues.main.d518faf02a4133a8c88631ad9ef7339aa797935b.js.download" async=""></script><script type="text/javascript" async="" src="./TEE_files/O5SLs1K1RfWhBYkHvMaXTg.js.download"></script><script type="text/javascript" async="" src="./TEE_files/analytics.js.download"></script><script async="" src="./TEE_files/l.js.download"></script><script src="./TEE_files/37753.js.download" defer=""></script><style type="text/css" media="screen">.uv-icon{box-sizing:border-box;display:inline-block;cursor:pointer;position:relative;transition:all 300ms;width:39px;height:39px;position:fixed;z-index:100002;opacity:0.8;transition:opacity 100ms}.uv-icon.uv-bottom-right{bottom:10px;right:12px}.uv-icon.uv-top-right{top:10px;right:12px}.uv-icon.uv-bottom-left{bottom:10px;left:12px}.uv-icon.uv-top-left{top:10px;left:12px}.uv-icon.uv-is-selected{opacity:1}.uv-icon svg{width:39px;height:39px}.uv-icon .uv-tooltip-container{position:relative}.uv-icon .uv-tooltip-container .uv-icon-tooltip{display:none;position:absolute;height:20px;padding:4px 8px;background-color:#464653;color:white;font-size:12px;border-radius:4px;line-height:18px;font-family:"Open Sans", sans-serif;white-space:nowrap}.uv-icon .uv-tooltip-container .uv-icon-tooltip.left,.uv-icon .uv-tooltip-container .uv-icon-tooltip.right{top:0;bottom:0;margin:auto 10px}.uv-icon .uv-tooltip-container .uv-icon-tooltip.top,.uv-icon .uv-tooltip-container .uv-icon-tooltip.bottom{transform:translate(-30%);margin:10px auto}.uv-icon .uv-tooltip-container .uv-icon-tooltip.top{bottom:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.bottom{top:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.left{right:100%}.uv-icon .uv-tooltip-container .uv-icon-tooltip.right{left:100%}.uv-icon .uv-tooltip-container:hover .uv-icon-tooltip{display:block}.uv-icon-trigger{display:block;width:39px;height:39px;border:none;padding:0;cursor:pointer;background:none}.uv-popover{font-family:sans-serif;font-weight:100;font-size:13px;color:black;position:fixed;z-index:100001}.uv-popover-content{border-radius:5px;background:white;border:1px solid transparent;position:relative;width:325px;height:325px;transition:background 200ms}.uv-bottom .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 0 -10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-top .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 0 10px 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-left .uv-popover-content{box-shadow:rgba(0,0,0,0.3) 10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-right .uv-popover-content{box-shadow:rgba(0,0,0,0.3) -10px 0 60px,rgba(0,0,0,0.1) 0 0 20px}.uv-ie8 .uv-popover-content{position:relative}.uv-ie8 .uv-popover-content .uv-popover-content-shadow{display:block;background:black;content:'';position:absolute;left:-15px;top:-15px;width:100%;height:100%;filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=15,MakeShadow=true,ShadowOpacity=0.30);z-index:-1}.uv-popover-tail{border:9px solid transparent;width:0;z-index:10;position:absolute;transition:border-top-color 200ms}.uv-top .uv-popover-tail{bottom:-20px;border-top:11px solid white}.uv-bottom .uv-popover-tail{top:-20px;border-bottom:11px solid white}.uv-left .uv-popover-tail{right:-20px;border-left:11px solid white}.uv-right .uv-popover-tail{left:-20px;border-right:11px solid white}.uv-popover-loading{background:white;border-radius:5px;position:absolute;width:100%;height:100%;left:0;top:0}.uv-popover-loading-text{position:absolute;top:50%;margin-top:-0.5em;width:100%;text-align:center}.uv-popover-iframe-container{height:100%}.uv-popover-iframe{border-radius:5px;overflow:hidden}.uv-is-hidden{display:none}.uv-is-invisible{display:block !important;visibility:hidden !important}.uv-is-transitioning{display:block !important}.uv-no-transition{transition:none !important}.uv-fade{opacity:1;transition:opacity 200ms ease-out}.uv-fade.uv-is-hidden{opacity:0}.uv-scale-top,.uv-scale-top-left,.uv-scale-top-right,.uv-scale-bottom,.uv-scale-bottom-left,.uv-scale-bottom-right,.uv-scale-right,.uv-scale-right-top,.uv-scale-right-bottom,.uv-scale-left,.uv-scale-left-top,.uv-scale-left-bottom,.uv-slide-top,.uv-slide-bottom,.uv-slide-left,.uv-slide-right{opacity:1;transition:all 80ms ease-out}.uv-scale-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%)}.uv-scale-top-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%) translateX(-10%)}.uv-scale-top-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(-15%) translateX(10%)}.uv-scale-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%)}.uv-scale-bottom-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%) translateX(-10%)}.uv-scale-bottom-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateY(15%) translateX(10%)}.uv-scale-right.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%)}.uv-scale-right-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%) translateY(-10%)}.uv-scale-right-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(15%) translateY(10%)}.uv-scale-left.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%)}.uv-scale-left-top.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%) translateY(-10%)}.uv-scale-left-bottom.uv-is-hidden{opacity:0;transform:scale(0.8) translateX(-15%) translateY(10%)}.uv-slide-top.uv-is-hidden{transform:translateY(-100%)}.uv-slide-bottom.uv-is-hidden{transform:translateY(100%)}.uv-slide-left.uv-is-hidden{transform:translateX(-100%)}.uv-slide-right.uv-is-hidden{transform:translateX(100%)}
+</style><style type="text/css" media="print">#uvTab,.uv-tray,.uv-icon,.uv-popover,.uv-bubble{display:none!important}</style><iframe src="./TEE_files/saved_resource.html"></iframe><iframe src="./TEE_files/saved_resource(1).html"></iframe><iframe src="./TEE_files/saved_resource(2).html"></iframe><link rel="stylesheet" type="text/css" integrity="sha256-1MZ27UFcsWZUwTCcjC7nkNsS9KWuXvtnWlld3TGmqeM=" crossorigin="anonymous" href="./TEE_files/container.d518faf02a4133a8c88631ad9ef7339aa797935b.css"><iframe src="./TEE_files/saved_resource(3).html"></iframe></head><body><nav class="navbar navbar-inverse navbar-fixed-top" style="margin-bottom: 0; font-weight: normal; height: 50px;">
+    <div class="container-fluid">
+
+        <div class="navbar-left pull-left">
+            <a href="https://labs.cognitiveclass.ai/tools/jupyterlab/lab/tree/labs/DS0105EN/Jupyter_Notebook.ipynb?lti=true#menu-toggle" id="menu-toggle" aria-label="Open the Labs menu">
+                <span class="fa fa-bars fa-2x" style="padding-top: 12px; color: #ccc; display: inline-block" aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="navbar-header pull-left" style="margin-left: 0">
+            <span class="navbar-brand" style="margin-left: 0; color: #ccc">Skills Network Labs</span>
+        </div>
+        <div class="navbar-header pull-left" style="margin-left: 20px;">
+            <div id="navbar-logo-divider" style="display: none; border-left: 2px solid #ccc;position: absolute;top: 25%;bottom: 25%;"></div>
+            <span id="navbar-logo-wrapper" class="navbar-brand" style="margin-left: 0;"></span>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li id="whatsnew" aria-hidden="true" title="What&#39;s New" style="padding-right:5rem; padding-top:1.25rem;"><div id="noticeable-widget"></div></li>
+            <li id="notifications-button" class="dropdown" aria-hidden="true" title="Notifications">
+            <span style="display: none;">Notifications</span>
+                <a href="https://labs.cognitiveclass.ai/tools/jupyterlab/lab/tree/labs/DS0105EN/Jupyter_Notebook.ipynb?lti=true#notifications" class="dropdown-toggle" data-toggle="dropdown" style="padding-top: 15px; display: inline-block">
+                    <span id="notifications_count" class="badge" style="font-size:10px;"></span>
+                    <span class="fa fa-bell fa-lg"></span>
+                </a>
+                <ul id="notifications" class="dropdown-menu" style="background-color: #222222">
+                    <li class="no-notifications"> You don't have any notifications. </li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" id="dropdown" data-toggle="dropdown" href="https://labs.cognitiveclass.ai/tools/jupyterlab/lab/tree/labs/DS0105EN/Jupyter_Notebook.ipynb?lti=true#">Account<span class="caret"></span></a>
+                <ul class="dropdown-menu" style="background-color: #222222">
+                    <li><a href="https://labs.cognitiveclass.ai/profile">Profile</a></li>
+                    <li><a href="https://labs.cognitiveclass.ai/session_history">Session History</a></li>
+                    <li><a href="https://labs.cognitiveclass.ai/logout" class="hyperlink">Logout</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<style>
+
+    /* begin notifications-related css */
+    #notifications {
+      min-width: 550px;
+    }
+
+    #mark_all_read {
+        color: #9d9d9d;
+        cursor: pointer;
+    }
+
+    #mark_all_read:hover {
+        color: white;
+    }
+
+    #notifications .notification {
+        padding: 5px 20px;
+        border: 1px solid black;
+        color: black;
+        background-color: white;
+    }
+
+    #notifications .no-notifications {
+        padding: 12px 20px;
+        border: 1px solid black;
+        color: black;
+        background-color: white;
+        text-align: center;
+    }
+
+    #notifications .notification.read {
+        background-color: #AFAFAF;
+    }
+
+    #previous_notifications {
+        color: #9d9d9d;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .badge {
+        float: inline-start;
+        background:#fa3e3e !important;
+        position:relative;
+        top: -5px;
+        left: 10px;
+    }
+
+    a:hover .badge {
+        background:#ff7e7e;
+    }
+    /* end notifications-related css */
+
+    .navbar-default .navbar-nav > li.dropdown:hover > a,
+    .navbar-default .navbar-nav > li.dropdown:hover > a:hover,
+    .navbar-default .navbar-nav > li.dropdown:hover > a:focus {
+        background-color: rgb(34, 34, 34);
+        color: rgb(85, 85, 85);
+    }
+
+    .navbar-collapse.collapse {
+        display: block !important;
+    }
+
+    .navbar-collapse{
+        margin-left: 0 !important;
+    }
+
+    .navbar-nav>li, .navbar-nav {
+        float: left !important;
+    }
+
+    .navbar-nav.navbar-right:last-child {
+        margin-right: -15px !important;
+    }
+
+    .navbar-right {
+        float: right!important;
+    }
+
+    li.dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-menu > li > a {
+        color: #CDCDCD !important;
+    }
+
+    .navbar-inverse .navbar-nav>li>a {
+        color: #ccc;
+    }
+
+</style>
+<script>
+  var branding_color_background = window.sessionStorage.getItem("branding_color_background")
+  var branding_color_text = window.sessionStorage.getItem("branding_color_text")
+  var branding_logo = window.sessionStorage.getItem("branding_logo")
+
+  if (branding_color_background && branding_color_text) {
+    console.log("applying branding")
+    var sheet = document.createElement("style");
+    sheet.innerHTML = "\
+    nav.navbar {background-color: " + branding_color_background + " !important;} \
+    nav.navbar span[style], nav.navbar a[style], nav.navbar a {color: white !important;}"
+    console.log(sheet)
+    document.body.appendChild(sheet)
+  }
+if (branding_logo) {
+  var logo = document.createElement("img");
+  logo.src = branding_logo;
+  logo.style = "height: 50px; position: absolute; margin: auto; height: 20px; padding-left: 15px"
+  document.querySelector("#navbar-logo-wrapper").append(logo)
+  document.querySelector("#navbar-logo-divider").style.display = "";
+
+
+}
+</script>
+
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Labs environment for data science with Jupyter, R, and Scala.">
+    <script>
+      !function(){'use strict';var e=['debug','destroy','do','help','identify','is','off','on','ready','render','reset','safe','set'],t=window.noticeable=window.noticeable||[];function n(e){return function(){var n=Array.prototype.slice.call(arguments);return n.unshift(e),t.push(n),t}}t.version='2.0.0',function(){for(var r=0;r<e.length;r++){var i=e[r];t[i]=n(i)}}(),function(){var e=document.createElement('script');e.async=!0,e.src='https://sdk.noticeable.io/l.js';var t=document.head;t.insertBefore(e,t.firstChild)}()}();
+      noticeable.render('widget', 'nOM8V6pxGhAI0jP0Pdl5');
+    </script>
+    <title></title>
+      <script>
+          var DEFAULT_HEARTBEAT_TIME = 1800;
+          console.log("Persisting DEFAULT_HEARTBEAT_TIME as " + DEFAULT_HEARTBEAT_TIME);
+          var INACTIVE_LOGOUT_TIME = 30;
+      </script>
+
+    
+  <link rel="stylesheet" type="text/css" href="./TEE_files/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./TEE_files/app.min.css">
+  <link rel="icon" type="image/png" href="https://labs.cognitiveclass.ai/static/images/favicon_16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="https://labs.cognitiveclass.ai/static/images/favicon_32x32.png" sizes="32x32">
+  <link rel="shortcut icon" href="https://labs.cognitiveclass.ai/static/images/favicon.ico">
+
+
+      
+    <!-- start Google Analytics -->
+    <script async="" src="./TEE_files/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-1433936-16', {
+        'cookie_flags': 'SameSite=Strict;Secure'
+      });
+    </script>
+    <!-- end Google Analytics -->
+  
+
+  
+    <meta name="google-site-verification" content="">
+  
+
+  
+    <script src="./TEE_files/raven.min.js.download" integrity="sha384-rKlahPWcPWms7ChtWI3cD1GNFfV0mrMOXc2ZE9FO52lTge4iQDVvcatyJISSLkkX" crossorigin="anonymous" referrerpolicy="no-referrer" defer=""></script>
+    <script defer="">
+      // Once everything including subframes and stylesheets is loaded
+      window.addEventListener('load', function(){
+        function configureRaven() {
+          Raven.config('https://b052ab88487148ac9ff6eed308fd111b@sentry.skills.network/4', {
+            logger: 'monocle-frontend'
+          }).install();
+        }
+
+        if (Raven) {
+          configureRaven();
+        } else {
+          setTimeout(function(){ configureRaven(); }, 500);
+        }
+      });
+    </script>
+  
+
+    <script src="./TEE_files/es5.min.js.download" integrity="sha384-meiaV8DP8WNz9bvwGCLNXn7cvfBhAbrcy7seP0AxFqFQBqwQsdFhMSnDDw3HnLnl" crossorigin="anonymous" referrerpolicy="no-referrer" defer=""></script>
+    <script src="./TEE_files/browser-support-check.js.download" defer="">
+    </script>
+    <link rel="stylesheet" href="./TEE_files/jquery.fontpicker.min.css">
+    <link rel="stylesheet" href="./TEE_files/spectrum.min.css" integrity="sha384-KmzjXnRfDX1wMiSNIbVqWsTSYme1szY3QnEjIi1NDM+PCnmNhVay1JvmN9GK7XVC" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="./TEE_files/jquery.min.js.download"></script>
+    <script src="./TEE_files/jquery.font-accessibility.min.js.download"></script>
+    <script src="./TEE_files/spectrum.min.js.download" integrity="sha384-DenIEyBw14FjP2HqW+PRmEXKvqCFkde8Ybexqwl34wLi6YNnpSVe0+nlHYFJQFCb" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./TEE_files/bootstrap.min.js.download" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./TEE_files/jquery.fontpicker.js.download"></script>
+  
+  
+    
+  <div class="main">
+    
+      
+        <style>
+  /* Google recommends inlining small CSS */
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Toggle Styles */
+
+  #sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 250px;
+    top: 50px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+
+  /* Sidebar Styles */
+
+  .sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    list-style: none;
+    font-weight: normal;
+  }
+
+  .sidebar-nav li {
+    text-indent: 20px;
+    line-height: 30px;
+    font-weight: lighter;
+    font-size: 16px;
+  }
+
+  .sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #CDCDCD;
+  }
+
+  .sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .sidebar-nav li a:active,
+  .sidebar-nav li a:focus {
+    text-decoration: none;
+  }
+
+  .sidebar-nav > .sidebar-label {
+    text-indent: 20px;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+
+  .sidebar-nav > .sidebar-label a {
+    color: #CDCDCD;
+  }
+
+  .sidebar-nav > .sidebar-label a:hover {
+    color: #CDCDCD;
+    background: none;
+  }
+
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      top: 50px
+    }
+  }
+
+  #sidebar-wrapper.toggled {
+    width: 0;
+  }
+</style>
+
+<div id="sidebar-wrapper" class="toggled">
+  
+  
+  <ul class="sidebar-nav">
+      <li class="sidebar-label"><a>Manage Data</a></li>
+    
+      <li><a href="https://labs.cognitiveclass.ai/tools/datasette/-/sn">Datasette - Practice and Explore SQL (Beta)</a></li>
+    
+
+
+    
+      <li class="sidebar-label"><a>Prepare Data</a></li>
+      
+      
+        <li><a href="https://vision.skills.network/">CV Studio (Alpha)</a></li>
+      
+    
+
+
+
+    <li class="sidebar-label"><a>Build Analytics</a></li>
+    
+      <li><a href="https://labs.cognitiveclass.ai/tools/jupyterlab/">JupyterLab</a></li>
+    
+    
+    
+      <li><a href="https://labs.cognitiveclass.ai/tools/rstudio-ide/">RStudio IDE</a></li>
+    
+    
+
+    
+
+    
+    <li class="sidebar-label"><a>Develop Applications</a></li>
+      
+      
+        <li><a href="https://labs.cognitiveclass.ai/tools/theiadocker/">Cloud IDE (With Docker)</a></li>
+      
+      
+        <li><a href="https://labs.cognitiveclass.ai/tools/theiaopenshift/">Cloud IDE (With OpenShift)</a></li>
+      
+    
+
+    <li class="sidebar-label"><a>Resources</a></li>
+    
+      <li><a rel="noopener" href="https://labs.cognitiveclass.ai/tools/jupyterlab/lab/tree/labs/DS0105EN/Jupyter_Notebook.ipynb?lti=true#" data-uv-trigger="smartvote" data-uv-scanned="true" id="uv-2">Submit an idea</a></li>
+    
+    <li><a rel="noopener" target="_blank" href="https://cognitiveclass.ai/blog/">Blog</a></li>
+    
+      <li><a rel="noopener" target="_blank" href="https://labs.cognitiveclass.ai/kb">Knowledge Base</a>
+      </li>
+      <li><a rel="noopener" target="_blank" href="https://labs.cognitiveclass.ai/forum">Feedback Forum</a></li>
+      <li><a rel="noopener" target="_blank" href="https://labs.cognitiveclass.ai/support">Support</a></li>
+    
+    <li><a rel="noopener" target="_blank" href="https://courses.cognitiveclass.ai/">Online Learning</a></li>
+    <li><a href="https://labs.cognitiveclass.ai/changelog">What's new</a></li>
+
+    <li class="sidebar-label"><a>Terms</a></li>
+    <li><a rel="noopener" target="_blank" href="https://cognitiveclass.ai/legal/">Terms of Use</a></li>
+    <li><a rel="noopener" target="_blank" href="https://cognitiveclass.ai/legal/#privacypolicy">Privacy Notice</a></li>
+  </ul>
+</div>
+      
+    
+    
+      
+        <div class="page toggled page--maximized">
+      
+    
+    
+  
+    
+
+    
+    
+
+    <iframe id="tool_iframe" name="tool_iframe_name" src="./TEE_files/oauth_login.html" onload="iframeLoaded()" allow="microphone; camera" style="width: 100%; height: calc(100% - 50px);"></iframe>
+    
+
+  
+
+
+    
+      </div>
+    
+  </div>
+
+  
+
+
+
+    
+
+      
+  
+    <script type="text/javascript">
+      var sidebarConfig = {
+        minimized: true
+      };
+    </script>
+  
+
+  <script src="./TEE_files/bundle.min.js.download"></script>
+
+      <script>
+
+        function applyFont(element, fontSpec) {
+
+          // Split font into family and weight/style
+          var tmp = fontSpec.split(':'),
+          family = tmp[0],
+          variant = tmp[1] ||'400',
+          weight = parseInt(variant,10),
+          italic = /i$/.test(variant);
+
+          // Set selected font on paragraphs
+          var css = {
+
+            fontFamily:"'" + family +"'",
+
+            fontWeight: weight,
+
+            fontStyle: italic ?'italic' :'normal'
+          };
+
+          $(element).css(css);
+
+        }
+
+        $(window).on("load", function(){
+          if ($( "#myFontPicker" ).length) {
+
+            $('#myFontPicker')
+              .fontpicker()
+              .on('change', function() {
+              applyFont('#html-content', this.value);
+              //Get existing font information and update
+              let newFont = this.value.substring(0, this.value.length - 4);
+              if (localStorage.getItem("fontProperties") !== null) {
+                let jsonFontPropertiesString = localStorage.getItem("fontProperties");
+                let fontProperties = JSON.parse(jsonFontPropertiesString);
+                fontProperties.FontFamily = newFont;
+                localStorage.setItem("fontProperties", JSON.stringify(fontProperties));
+              }
+              else {
+
+                var fontProperties = {
+                };
+                if (document.getElementsByTagName("p").length > 0) {
+                  fontProperties.ParagraphFont = document.getElementsByTagName("p")[0].style.fontSize;
+                }
+                if (document.getElementsByTagName("h1").length > 0) {
+                  fontProperties.Header1Font = document.getElementsByTagName("h1")[0].style.fontSize;
+                }
+                if (document.getElementsByTagName("h2")) {
+                  fontProperties.Header2Font = document.getElementsByTagName("h2")[0].style.fontSize;
+                }
+                if (document.getElementsByTagName("h3").length > 0) {
+                  fontProperties.Header3Font = document.getElementsByTagName("h3")[0].style.fontSize;
+                }
+                if (document.getElementsByTagName("pre").length > 0) {
+                  fontProperties.PreFont = document.getElementsByTagName("pre")[0].style.fontSize;
+                }
+                fontProperties.StepperFont = document.getElementsByClassName("stepper")[0].style.fontSize;
+                fontProperties.FontFamily = newFont;
+
+                localStorage.setItem("fontProperties", JSON.stringify(fontProperties));
+              }
+
+            });
+          }
+
+
+        });
+
+      </script>
+
+      <!-- minimize sidebar -->
+      <script>
+          $(function () {
+              $("#menu-toggle").click(function(e) {
+                  e.preventDefault();
+                  $("#sidebar-wrapper").toggleClass("toggled");
+                  $(".page").toggleClass("toggled");
+              });
+          });
+      </script>
+
+    
+
+      <script defer="">
+        var appcuesLoader = document.createElement("script");
+
+        appcuesLoader.addEventListener("load", function() {
+          function configureAppcues() {
+            // Adblockers can block Appcues
+            if (Appcues) {
+              
+                Appcues.identify('treasureokaf');
+              
+            }
+          }
+
+          if (Appcues) {
+            configureAppcues();
+          } else {
+            setTimeout(function(){ configureAppcues(); }, 500);
+          }
+        });
+
+        appcuesLoader.src = 'https://fast.appcues.com/37753.js';
+        // Defer is better than async because it doesn't block rendering
+        appcuesLoader.defer = true;
+        document.getElementsByTagName("script")[0].parentNode.appendChild(appcuesLoader);
+      </script>
+
+    
+
+    
+    
+      <!-- start UserVoice -->
+      <script type="text/javascript" defer="">
+        // Once the document is loaded but not stylesheets or subdocuments
+        window.addEventListener('DOMContentLoaded', function() {
+          var api_key = 'O5SLs1K1RfWhBYkHvMaXTg'; // pragma: whitelist secret
+          var forum_id = '246775';
+
+          // Include the UserVoice JavaScript SDK (only needed once on a page)
+          UserVoice = window.UserVoice || [];
+          (function () {
+            var uv = document.createElement('script');
+            uv.type = 'text/javascript';
+            uv.async = true;
+            uv.src = 'https://widget.uservoice.com/' + api_key + '.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(uv, s)
+          })();
+
+          
+            UserVoice.push(['setSSO', 'CgeuWIpnxAdbNwnsXHizxJq44P9rBOF6vimPws5FXOXPPNZ5QozU/XxLkGQ67rRqqDM51%2B%2BilRfVqO1G9MWDeTBLmcJ7VpVQhBCIlHg01Va0mvmA8r585epDZHTd6m/DBeo7k4ZrEd6r62t/5BE7lbM3EdZ8aGxzltICKvbpSaeJvyZM7AGRgn/ngS%2BuN3kp']);
+          
+
+          //
+          // UserVoice Javascript SDK developer documentation:
+          // https://www.uservoice.com/o/javascript-sdk
+          //
+          UserVoice.push(['showTab', 'classic_widget', {
+            mode: 'full',
+            primary_color: '#19496A',
+            link_color: '#007dbf',
+            default_mode: 'support',
+            tab_label: "Support/Feedback",
+            tab_color: '#19496A',
+            tab_position: 'middle-right',
+            tab_inverted: false
+          }]);
+
+          // Post new ideas to IBM Data Scientist Workbench forum
+          UserVoice.push(['set', 'forum_id', forum_id]);
+
+          
+            UserVoice.push(['identify', {
+              email: 'treasureokafor74@gmail.com',
+              name: ' '
+            }]);
+          
+        });
+
+      </script>
+      <!-- end UserVoice -->
+    
+
+    
+  
+<div id="uvTab" style="background: url(&quot;https://widget.uservoice.com/pkg/clients/widget2/tab-right-dark-no-bullhorn-6c8fc4d589a9d68b16c89b8bd810aee48f11a826d292d22d2b5491cd2a072495.png&quot;) 50% 0px no-repeat rgb(25, 73, 106); border-top: 1px solid rgb(255, 255, 255); border-bottom: 1px solid rgb(255, 255, 255); border-left: 1px solid rgb(255, 255, 255); border-image: initial; border-right: none; border-radius: 4px 0px 0px 4px; box-shadow: rgba(255, 255, 255, 0.25) 1px 1px 1px inset, rgba(0, 0, 0, 0.5) 0px 1px 2px; font: bold 14px / 1em Arial, sans-serif; position: fixed; right: 0px; top: 50%; z-index: 9999; margin-top: -81px;" class="uv-tab uv-slide-right " aria-label="Open Feedback Widget"><a id="uvTabLabel" style="background-color: transparent; display:block;padding:10px 5px 10px 5px;text-decoration:none;" href="javascript:void(0);"><img src="./TEE_files/feedback-tab.png" alt="Support/Feedback" style="border:0; background-color: transparent; padding:0; margin:0;"></a></div><div></div><div></div></body></html>
